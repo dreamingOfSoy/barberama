@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: all 0.2s;
+
+  &:link,
+  &:visited {
+    color: var(--colour-light);
+  }
+
+  &:hover,
+  &:active {
+    color: var(--tertiary-colour-default);
+    scale: (1.05);
+  }
+}

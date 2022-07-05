@@ -1,0 +1,16 @@
+.gradient-wrap {
+  content: '';
+  height: 100%;
+  width: 100%;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(var(--primary-colour-dark-rgba), 0.55),
+    rgba(var(--primary-colour-light-rgba), 0.55)
+  );
+
+  z-index: 0;
+
+  grid-row: 1/3;
+  grid-column: 1/3;
+}

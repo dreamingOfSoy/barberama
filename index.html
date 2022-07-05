@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ovo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="script.js"></script>
+    <title>Barberama</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="gradient-wrap"></div>
+        <nav class="nav">
+          <a href="#" class="link nav__link">About</a>
+          <a href="#" class="link nav__link">Services</a>
+          <a href="#" class="link nav__link">Shop</a>
+          <img
+            src="imgs/arberama-logo-white.png"
+            alt="Barberama Logo"
+            class="nav__logo"
+          />
+          <a href="#" class="link nav__link">Gallery</a>
+          <a href="#" class="link nav__link">Blog</a>
+          <a href="#" class="link nav__link">Contact</a>
+        </nav>
+
+        <div class="header-aside">
+          <div class="header-aside__imgs">
+            <img
+              src="/imgs/shop-large.jpg"
+              alt="Photo of barber shop"
+              class="header-aside__img"
+            />
+          </div>
+          <div class="header-aside__text">
+            <h1 class="header-aside__title">Barberama</h1>
+            <h2 class="header-aside__subtitle">Since 1972</h2>
+            <p class="header-aside__blurb">
+              There ain't no other barbershop in the city out of which you will
+              leave with more confidence in your haircut than Barberama. We'll
+              treat you right, we'll cut you right, we'll leave you right.
+            </p>
+          </div>
+          <button class="btn header-aside__btn">Book a cut now</button>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel__imgs">
+            <img
+              src="/imgs/hair-spray-large.png"
+              alt="Man getting hair sprayed"
+              class="carousel__img"
+            />
+            <img
+              src="/imgs/neck-brush-large.jpg"
+              alt="Man getting hair brushed"
+              class="carousel__img"
+            />
+            <img
+              src="/imgs/beard-cut-large.jpg"
+              alt="Man getting hair cut"
+              class="carousel__img"
+            />
+            <img
+              src="/imgs/hair-spray-large.png"
+              alt="Man getting hair sprayed"
+              class="carousel__img"
+              id="clone"
+            />
+          </div>
+
+          <div class="carousel__controls">
+            <div class="carousel__carousel-indicators">
+              <div
+                class="carousel__indicator u-carousel-indicators-active"
+                data-id="0"
+              ></div>
+              <div class="carousel__indicator" data-id="1"></div>
+              <div class="carousel__indicator" data-id="2"></div>
+            </div>
+            <p>
+              <ion-icon
+                class="icon carousel__icon--play u-display-none"
+                name="play-outline"
+              ></ion-icon>
+            </p>
+            <p>
+              <ion-icon
+                class="icon carousel__icon--pause"
+                name="pause-outline"
+              ></ion-icon>
+            </p>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

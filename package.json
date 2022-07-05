@@ -1,0 +1,35 @@
+{
+  "name": "barberama",
+  "version": "1.0.0",
+  "description": "Barber shop website",
+  "main": "script.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:sass": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:sass": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:sass": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:sass prefix:sass compress:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamingOfSoy/barberama.git"
+  },
+  "author": "E J Mainwaring",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamingOfSoy/barberama/issues"
+  },
+  "homepage": "https://github.com/dreamingOfSoy/barberama#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-scss": "^4.0.4"
+  }
+}

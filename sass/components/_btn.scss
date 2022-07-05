@@ -1,0 +1,16 @@
+.btn {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  background-color: var(--tertiary-colour-default);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s;
+
+  &:hover {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+}
