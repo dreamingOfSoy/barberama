@@ -1,5 +1,11 @@
 'use strict';
 
+/*
+/////////////////////////////
+CAROUSEL SECTION
+/////////////////////////////
+*/
+
 // Selectors
 const headerCarouselImgsContainer = document.querySelector('.carousel__imgs');
 const headerCarouselImgs = document.querySelectorAll('.carousel__img');
@@ -43,6 +49,7 @@ function slideRight() {
 // For each image, we listen to for the 'transitionend' event which allows the transition to end.
 headerCarouselImgs.forEach(img => {
   img.addEventListener('transitionend', () => {
+    if (typeof headerCarouselImgs[curCount] === 'undefined') return;
     // After the correct transition has ended, we shift all the images back to their original positions and reset the counter.
     if (headerCarouselImgs[curCount].id === 'clone') {
       curCount = 0;
@@ -182,4 +189,35 @@ carouselIconPlay.addEventListener('click', function () {
   slideIntervalManager(true, slideRight, 3000);
   carouselIconPlay.classList.add('u-display-none');
   carouselIconPause.classList.remove('u-display-none');
+});
+
+/*
+/////////////////////////////
+ABOUT SECTION
+/////////////////////////////
+*/
+
+const aboutBtn = document.querySelector('.about-section__slide-about-btn');
+const whereBtn = document.querySelector('.about-section__slide-where-btn');
+const aboutSection = document.querySelector('.about-section__text-about');
+const whereSection = document.querySelector('.about-section__text-where');
+const aboutSectionContainer = document.querySelector(
+  '.about-section__container-about'
+);
+const whereSectionContainer = document.querySelector(
+  '.about-section__container-where'
+);
+
+whereBtn.addEventListener('click', () => {
+  aboutSection.style.transform = `translateX(100%)`;
+  aboutSection.style.opacity = '0';
+  aboutSection.style.zIndex = 0;
+  whereSection.style.transform = `translateX(0)`;
+});
+
+aboutBtn.addEventListener('click', () => {
+  aboutSection.style.transform = `translateX(0)`;
+  aboutSection.style.opacity = '1';
+  aboutSection.style.zIndex = 5;
+  whereSection.style.transform = `translateX(-100%)`;
 });

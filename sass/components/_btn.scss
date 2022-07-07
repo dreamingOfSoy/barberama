@@ -1,10 +1,11 @@
 .btn {
   border: none;
-  color: inherit;
+  color: var(--secondary-colour-dark);
   cursor: pointer;
-  background-color: var(--tertiary-colour-default);
+  background-color: var(--tertiary-colour-light);
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
 
   transition: all 0.2s;
 
