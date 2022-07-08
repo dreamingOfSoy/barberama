@@ -18,7 +18,7 @@ You can view the website HERE().
 
 TODO:
 
-[] = Implement responsive images using density switching, and the <picture> element.
+[] = Implement responsive images using density switching, and the picture element.
 [] = Use Css to implement responsive images too.
 [] = Make desktop navigation sticky.
 [] = Improve overall lighthouse score.
