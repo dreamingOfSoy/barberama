@@ -48,6 +48,9 @@
     gap: 2rem;
     align-items: center;
 
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+
     @include breakpoint(maxBreakOne) {
       gap: 1rem;
     }
@@ -119,6 +122,9 @@
     text-transform: uppercase;
     padding: 2rem 3rem;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.6);
+
+    animation-name: moveIn;
+    animation-duration: 0.4s;
 
     @include breakpoint(maxBreakOne) {
       font-size: 1.4rem;

@@ -10,6 +10,9 @@
   align-items: center;
   justify-content: center;
 
+  animation-name: moveIn;
+  animation-duration: 0.4s;
+
   @include breakpoint(maxBreakTwo) {
     display: none;
   }

@@ -15,6 +15,9 @@
     align-items: center;
     justify-content: space-between;
 
+    animation-name: moveIn;
+    animation-duration: 0.4s;
+
     &__btn-mobile-nav {
       height: 5.8rem;
       margin: 2rem 3rem;

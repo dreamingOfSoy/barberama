@@ -17,6 +17,32 @@
   --colour-dark: #252627;
   --colour-dark-rgba: 37, 38, 39; }
 
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  80% {
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  20% {
+    transform: scale(0.2); }
+  40% {
+    transform: scale(0.4); }
+  60% {
+    transform: scale(0.6); }
+  80% {
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -108,6 +134,9 @@ p {
     @media (max-width: 51em) {
       .carousel__img {
         height: 310%; } }
+    @media (max-width: 38em) {
+      .carousel__img {
+        height: 210%; } }
     @media (max-width: 32.5em) {
       .carousel__img {
         height: 210%; } }
@@ -401,7 +430,9 @@ p {
   display: flex;
   gap: 4rem;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  animation-name: moveIn;
+  animation-duration: 0.4s; }
   @media (max-width: 65em) {
     .nav {
       display: none; } }
@@ -430,7 +461,9 @@ p {
       z-index: 100;
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      animation-name: moveIn;
+      animation-duration: 0.4s; }
       .sticky-nav__btn-mobile-nav {
         height: 5.8rem;
         margin: 2rem 3rem;
@@ -546,7 +579,9 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center; }
+    align-items: center;
+    animation-name: fadeIn;
+    animation-duration: 0.4s; }
     @media (max-width: 74.5em) {
       .header-aside__text {
         gap: 1rem; } }
@@ -599,7 +634,9 @@ p {
     font-size: 1.8rem;
     text-transform: uppercase;
     padding: 2rem 3rem;
-    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.6); }
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.6);
+    animation-name: moveIn;
+    animation-duration: 0.4s; }
     @media (max-width: 74.5em) {
       .header-aside__btn {
         font-size: 1.4rem;
