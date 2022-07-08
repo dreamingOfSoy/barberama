@@ -6,6 +6,11 @@
   grid-row: 1/3;
   grid-column: 2/3;
 
+  @include breakpoint(maxBreakFive) {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+
   display: flex;
 
   &__imgs {
@@ -24,6 +29,14 @@
     position: absolute;
     height: 180%;
     align-self: center;
+
+    @include breakpoint(maxBreakFive) {
+      height: 310%;
+    }
+
+    @include breakpoint(maxBreakSeven) {
+      height: 210%;
+    }
   }
 
   &__controls {
@@ -53,6 +66,11 @@
     border-radius: 50%;
     background-color: var(--colour-light);
     cursor: pointer;
+
+    @include breakpoint(maxBreakThree) {
+      height: 0.9rem;
+      width: 0.9rem;
+    }
   }
 
   &__icon--play,

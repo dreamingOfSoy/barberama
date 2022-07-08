@@ -1,3 +1,27 @@
+// Responsive
+
+$breakpoints: (
+  maxBreakOne: 74.5em,
+  maxBreakTwo: 65em,
+  maxBreakThree: 62.5em,
+  maxBreakFour: 56em,
+  maxBreakFive: 51em,
+  maxBreakSix: 38em,
+  maxBreakSeven: 32.5em,
+);
+
+@mixin breakpoint($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @warn "Warning: `#{$name}` is not a valid breakpoint name.";
+  } @else {
+    @media (max-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  }
+}
+
+// Mixins
+
 @mixin flexColumn() {
   display: flex;
   flex-direction: column;

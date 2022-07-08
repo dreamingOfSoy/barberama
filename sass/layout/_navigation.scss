@@ -10,12 +10,24 @@
   align-items: center;
   justify-content: center;
 
+  @include breakpoint(maxBreakTwo) {
+    display: none;
+  }
+
   &__link {
     font-size: 1.8rem;
     font-weight: 600;
+
+    @include breakpoint(maxBreakOne) {
+      font-size: 1.6rem;
+    }
   }
 
   &__logo {
     height: 16rem;
+
+    @include breakpoint(maxBreakOne) {
+      height: 14rem;
+    }
   }
 }

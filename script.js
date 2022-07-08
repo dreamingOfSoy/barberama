@@ -221,3 +221,19 @@ aboutBtn.addEventListener('click', () => {
   aboutSection.style.zIndex = 5;
   whereSection.style.transform = `translateX(-100%)`;
 });
+
+/*
+/////////////////////////////
+TABLET AND MOBILE NAV SECTION
+/////////////////////////////
+*/
+
+const mobileNavBtn = document.querySelectorAll('.sticky-nav__icon-mobile-nav');
+
+const stickyNav = document.querySelector('.sticky-nav');
+
+mobileNavBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    stickyNav.classList.toggle('nav-open');
+  });
+});

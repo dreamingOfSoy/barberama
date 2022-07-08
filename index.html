@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/style.css" />
 
     <script defer src="script.js"></script>
-    <title>Barberama</title>
+    <title>Barberama | For a special kind of cut.</title>
   </head>
   <body>
     <main class="container">
@@ -44,7 +44,7 @@
           </div>
           <div class="header-aside__text">
             <h1 class="header-aside__title">Barberama</h1>
-            <h2 class="header-aside__subtitle">Since '82</h2>
+            <h2 class="header-aside__sub-title">Since '82</h2>
             <p class="header-aside__blurb">
               There ain't no other barbershop in the city out of which you will
               leave with more confidence in your haircut than Barberama. We'll
@@ -59,22 +59,22 @@
             <img
               src="/imgs/hair-spray-large.jpg"
               alt="Photo of man getting hair sprayed"
-              class="carousel__img"
+              class="carousel__img 1"
             />
             <img
               src="/imgs/neck-brush-large.jpg"
               alt="Photo of man getting hair brushed"
-              class="carousel__img"
+              class="carousel__img 2"
             />
             <img
               src="/imgs/beard-cut-large.jpg"
               alt="Photo of man getting hair cut"
-              class="carousel__img"
+              class="carousel__img 3"
             />
             <img
               src="/imgs/hair-spray-large.png"
               alt="Photo of man getting hair sprayed"
-              class="carousel__img"
+              class="carousel__img 1"
               id="clone"
             />
           </div>
@@ -104,6 +104,33 @@
         </div>
       </header>
 
+      <nav class="sticky-nav">
+        <a href="#" class="sticky-nav__link-scroll"
+          ><img
+            src="imgs/arberama-logo-primary.png"
+            alt="Barberama logo"
+            class="sticky-nav__logo"
+        /></a>
+        <div class="nav-pages sticky-nav__pages">
+          <a class="link sticky-nav__link" href="#">About</a>
+          <a class="link sticky-nav__link" href="#">Service</a>
+          <a class="link sticky-nav__link" href="#">Shop</a>
+          <a class="link sticky-nav__link" href="#">Gallery</a>
+          <a class="link sticky-nav__link" href="#">Blog</a>
+          <a class="link sticky-nav__link" href="#">Contact</a>
+        </div>
+        <button class="btn sticky-nav__btn-mobile-nav">
+          <ion-icon
+            class="sticky-nav__icon-mobile-nav"
+            name="menu-outline"
+          ></ion-icon>
+          <ion-icon
+            class="sticky-nav__icon-mobile-nav"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </nav>
+
       <section class="staff-section">
         <h2 class="staff-section__title">Meet Our Barbers</h2>
         <div class="staff-section__card-section">
@@ -119,19 +146,19 @@
               <h3 class="card__name">Armie</h3>
               <h4 class="card__sub-title">Prices</h4>
               <div class="card__prices">
-                <p class="card__prices-title_">Mens:</p>
+                <p class="card__prices-title">Mens:</p>
                 <div class="card__prices-price">£20</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Womens:</p>
+                <p class="card__prices-title">Womens:</p>
                 <div class="card__prices-price">£25</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Under 16s:</p>
+                <p class="card__prices-title">Under 16s:</p>
                 <div class="card__prices-price">£15</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Students:</p>
+                <p class="card__prices-title">Students:</p>
                 <div class="card__prices-price">£18</div>
               </div>
             </div>
@@ -148,19 +175,19 @@
               <h3 class="card__name">Susie</h3>
               <h4 class="card__sub-title">Prices</h4>
               <div class="card__prices">
-                <p class="card__prices-title_">Mens:</p>
+                <p class="card__prices-title">Mens:</p>
                 <div class="card__prices-price">£15</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Womens:</p>
+                <p class="card__prices-title">Womens:</p>
                 <div class="card__prices-price">£20</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Under 16s:</p>
+                <p class="card__prices-title">Under 16s:</p>
                 <div class="card__prices-price">£10</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Students:</p>
+                <p class="card__prices-title">Students:</p>
                 <div class="card__prices-price">£12</div>
               </div>
             </div>
@@ -177,19 +204,19 @@
               <h3 class="card__name">Harvey</h3>
               <h4 class="card__sub-title">Prices</h4>
               <div class="card__prices">
-                <p class="card__prices-title_">Mens:</p>
+                <p class="card__prices-title">Mens:</p>
                 <div class="card__prices-price">£15</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Womens:</p>
+                <p class="card__prices-title">Womens:</p>
                 <div class="card__prices-price">£20</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Under 16s:</p>
+                <p class="card__prices-title">Under 16s:</p>
                 <div class="card__prices-price">£10</div>
               </div>
               <div class="card__prices">
-                <p class="card__prices-title_">Students:</p>
+                <p class="card__prices-title">Students:</p>
                 <div class="card__prices-price">£12</div>
               </div>
             </div>
@@ -210,6 +237,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+
         <div class="about-section__img-right">
           <img
             src="/imgs/barber-shop-large.jpg"
@@ -288,7 +316,7 @@
     <footer class="footer-section">
       <div class="footer-section__left">
         <img
-          class="nav__logo"
+          class="footer-section__logo"
           src="/imgs/arberama-logo-primary.png"
           alt="Brand logo"
         />

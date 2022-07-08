@@ -16,6 +16,7 @@
     border-right: 0.1rem solid rgba(var(--colour-light-rgba), 0.4);
 
     @include flexColumn;
+    gap: 1rem;
   }
 
   &__right {
@@ -27,11 +28,40 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @include breakpoint(maxBreakSix) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    height: 14rem;
+    @include breakpoint(maxBreakThree) {
+      height: 12rem;
+    }
+
+    @include breakpoint(maxBreakFive) {
+      height: 8rem;
+    }
+
+    @include breakpoint(maxBreakSeven) {
+      height: 6rem;
+    }
   }
 
   &__copyright {
     font-size: 1.2rem;
     color: var(--colour-light);
+
+    @include breakpoint(maxBreakThree) {
+      font-size: 0.8rem;
+    }
+
+    @include breakpoint(maxBreakSeven) {
+      font-size: 0.6rem;
+      align-self: start;
+    }
   }
 
   &__links {
@@ -43,6 +73,15 @@
 
     @include flexColumn;
     gap: 2rem;
+
+    @include breakpoint(maxBreakThree) {
+      font-size: 1.2rem;
+    }
+
+    @include breakpoint(maxBreakSix) {
+      font-size: 1.1rem;
+      align-items: start;
+    }
   }
 
   &__social-links {
@@ -50,6 +89,10 @@
 
     display: flex;
     gap: 2rem;
+
+    @include breakpoint(maxBreakSix) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -69,4 +112,25 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  > span {
+    @include breakpoint(maxBreakThree) {
+      font-size: 0.8rem;
+    }
+
+    @include breakpoint(maxBreakFive) {
+      font-size: 0.6rem;
+    }
+
+    @include breakpoint(maxBreakSeven) {
+      font-size: 0.4rem;
+    }
+  }
+
+  @include breakpoint(maxBreakSix) {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
 }

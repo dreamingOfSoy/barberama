@@ -3,4 +3,9 @@
   height: 100vh;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 1fr;
+
+  @include breakpoint(maxBreakFive) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
